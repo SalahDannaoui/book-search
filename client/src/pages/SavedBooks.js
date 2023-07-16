@@ -15,7 +15,7 @@ const SavedBooks = () => {
   const userData = data?.me || {};
   
 
-  const [deleteBook, {error}] = useMutation(REMOVE_BOOK);
+  const [deleteBook] = useMutation(REMOVE_BOOK);
 
   const handleDeleteBook = async (bookId) => {
  
